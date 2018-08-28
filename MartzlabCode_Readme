@@ -1,0 +1,3 @@
+All Martz Lab code contributions are in beta. Known, unresolved issues and bugs will be reported here.
+
+Bug 1) There is a persistent but inconsistent issue with the SDcard.c/ FATfs software, where the "f_mount" line (~line 940 of SDcard.c) will sometimes hang while running Init_SDCard() in Init(). This often happens in debug mode and we are not yet certain of the cause of the issue. New users may wish to start from scratch with SD read and write code.
